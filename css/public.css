@@ -12,7 +12,7 @@
 .send{
     width: 100%;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 .send button{
     width: 120px;
@@ -43,7 +43,7 @@
 .on-off{
     position: fixed;
     left: 0;
-    bottom: 20px;
+    bottom: 15px;
     right: 0;
     text-align: center;
 }
@@ -87,8 +87,8 @@
     background-color: transparent;
     color: #fff;
     font-size: 13px;
-    -webkit-animation-duration: 0.3s;
-    animation-duration: 0.3s;
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
     animation-timing-function: ease;
