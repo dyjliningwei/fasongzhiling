@@ -36,7 +36,7 @@ $(function () {
         })
     })
     function anim_del(ele,index) {
-        ele.find('button').css({'animation-delay': (index / 10) + 's'});
+        ele.find('button').css({'animation-delay': (index / 20) + 's'});
     }
     function line() {
         var chart = new Highcharts.Chart('line', {
