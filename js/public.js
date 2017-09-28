@@ -6,8 +6,10 @@ $(function () {
     $('.on-off .icon').on('click', function () {
         $(this).toggleClass('active');
         if($('.sel-button').css('display')=='none'){
+            setTimeout(function () {
+                $('.sel-button').toggle()
+            },100)
             $('.mask').toggle()
-            $('.sel-button').toggle()
             $('.sel-button ul li').find('button').addClass('animate_top-active').removeClass('animate_b-active')
             $('.sel-button ul li').each(function (index) {
                 var _this=$(this);
