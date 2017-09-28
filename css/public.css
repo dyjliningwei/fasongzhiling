@@ -51,6 +51,10 @@
     bottom: 0;
     background-color: rgba(248, 248, 248, 0.93);
     display: none;
+    background-image: url("../images/mask_bj.png");
+    background-repeat: no-repeat;
+    background-position: 100px -50px;
+    background-size: 350px 280px;
 }
 .on-off{
     position: fixed;
