@@ -4,8 +4,9 @@ $(function () {
 
     // 开关切换
     $('.on-off .icon').on('click', function () {
-        $(this).toggleClass('active');
+        var $this=$(this);
         if($('.sel-button').css('display')=='none'){
+            $this.toggleClass('active');
             setTimeout(function () {
                 $('.sel-button').toggle()
             },200)
@@ -22,6 +23,7 @@ $(function () {
                 anim_del(_this,index);
             })
             setTimeout(function () {
+                $this.toggleClass('active');
                 $('.mask').fadeToggle()
                 $('.sel-button').toggle()
             },450)
