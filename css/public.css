@@ -1,13 +1,23 @@
 body{
-    padding: 5px;
+    padding: 5px 8px;
 }
 .line{
     width: 100%;
-    height: 360px;
+    height: 390px;
     background:linear-gradient(to right, #92c149, #7fc34a);
     position: relative;
     border-radius: 10px;
     box-shadow: 1px 1px 10px 1px #dcdcdc;
+}
+@media screen and (min-width: 320px) and (max-width: 1800px){
+    .line{
+        height: 390px;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 320px){
+    .line{
+        height: 350px;
+    }
 }
 .line-title{
     font-size: 28px;

@@ -9,7 +9,7 @@ $(function () {
             $this.toggleClass('active');
             setTimeout(function () {
                 $('.sel-button').toggle()
-            },200)
+            },300)
             $('.mask').fadeToggle()
             $('.sel-button ul li').find('button').addClass('animate_top-active').removeClass('animate_b-active')
             $('.sel-button ul li').each(function (index) {
