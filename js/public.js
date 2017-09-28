@@ -8,7 +8,7 @@ $(function () {
         if($('.sel-button').css('display')=='none'){
             setTimeout(function () {
                 $('.sel-button').toggle()
-            },100)
+            },200)
             $('.mask').toggle()
             $('.sel-button ul li').find('button').addClass('animate_top-active').removeClass('animate_b-active')
             $('.sel-button ul li').each(function (index) {
@@ -36,6 +36,9 @@ $(function () {
                 line()
             },500)
         })
+    })
+    $('.mask').on('click',function () {
+        $('.on-off .icon').click()
     })
     function anim_del(ele,index) {
         ele.find('button').css({'animation-delay': (index / 20) + 's'});
