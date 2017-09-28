@@ -3,9 +3,10 @@ $(function () {
     line()
 
     // 开关切换
-    var flag = true, time = 3, timer = null;
+    var flag = true;
     $('.on-off button').on('click', function () {
         var $this = $(this);
+        // 禁止重复点击
         if (flag) {
             $this.attr('disabled', true);
             flag = false;
@@ -15,7 +16,7 @@ $(function () {
         setTimeout(function () {
             $this.attr('disabled', false);
             flag = true;
-        }, 1000)
+        }, 800)
         if ($('.sel-button').css('display') == 'none') {
             $this.find('.icon').toggleClass('active');
             setTimeout(function () {
@@ -41,6 +42,7 @@ $(function () {
         }
 
     })
+    // 按钮选择
     $('.sel-button ul li button').each(function () {
         $(this).on('click', function () {
             $('.on-off .icon').click()
