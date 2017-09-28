@@ -3,10 +3,10 @@ $(function () {
     line()
 
     // 开关切换
-    $('.on-off .icon').on('click', function () {
+    $('.on-off button').on('click', function () {
         var $this=$(this);
         if($('.sel-button').css('display')=='none'){
-            $this.toggleClass('active');
+            $this.find('.icon').toggleClass('active');
             setTimeout(function () {
                 $('.sel-button').toggle()
             },300)
@@ -23,7 +23,7 @@ $(function () {
                 anim_del(_this,index);
             })
             setTimeout(function () {
-                $this.toggleClass('active');
+                $this.find('.icon').toggleClass('active');
                 $('.mask').fadeToggle()
                 $('.sel-button').toggle()
             },450)
