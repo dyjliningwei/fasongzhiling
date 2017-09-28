@@ -10,11 +10,13 @@ $(function () {
         if (flag) {
             $this.attr('disabled', true);
             flag = false;
+            $('.sel-button ul li button').attr('disabled', true)
         }else {
             return false
         }
         setTimeout(function () {
             $this.attr('disabled', false);
+            $('.sel-button ul li button').attr('disabled', false)
             flag = true;
         }, 800)
         if ($('.sel-button').css('display') == 'none') {
