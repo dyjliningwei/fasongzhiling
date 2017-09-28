@@ -36,7 +36,7 @@ body{
     font-size: 13px;
     color: #fff;
     background:linear-gradient(to right, #92c149, #7fc34a);
-    box-shadow: 2px 2px 7px 1px #ccc;
+    box-shadow: 1px 1px 10px 1px #dddddd;
 }
 #line{
     width: 100%;
